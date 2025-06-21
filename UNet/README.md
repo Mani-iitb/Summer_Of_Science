@@ -4,7 +4,7 @@ This repository contains an implementation of the U-Net architecture for semanti
 
 ## 📁 Project Structure
 
-├── unet.ipynb # Jupyter notebook with dataset, model, training, evaluation, and visualization
+├── unet.ipynb # Jupyter notebook with dataset, model, training, evaluation, and visualization \\
 ├── data/ # Directory for dataset images and masks
 ├── images/
 ├── models/ #Contains trained model
