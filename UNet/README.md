@@ -5,9 +5,9 @@ This repository contains an implementation of the U-Net architecture for semanti
 ## 📁 Project Structure
 
 ├── unet.ipynb # Jupyter notebook with dataset, model, training, evaluation, and visualization <br>
-├── data/ # Directory for dataset images and masks
-├── images/
-├── models/ #Contains trained model
+├── data/ # Directory for dataset images and masks <br>
+├── images/ <br>
+├── models/ #Contains trained model <br>
 └── README.md # Project documentation
 
 ## 🚀 Features
@@ -42,10 +42,10 @@ The U-Net is composed of:
 - Can be used with Oxford-IIIT Pet Dataset.
 - Dataset directory structure:
 
-data/oxford-iiit-pet/
-├── images/
-│ ├── img1.png
-│ └── ...
-└── annotations/trimaps/
-├── mask1.png
-└── ...
+data/oxford-iiit-pet/<br>
+├── images/<br>
+│ ├── img1.png<br>
+│ └── ...<br>
+└── annotations/trimaps/<br>
+├── mask1.png<br>
+└── ...<br>
