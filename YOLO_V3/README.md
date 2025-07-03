@@ -1,19 +1,17 @@
 # YOLOv3 from Scratch
 
-![YOLO Logo](https://raw.githubusercontent.com/AlexeyAB/darknet/master/build/darknet/x64/yolo9000.weights/yolo9000.jpg)
-
 This repository contains a complete implementation of [YOLOv3 (You Only Look Once version 3)](https://pjreddie.com/darknet/yolo/) from scratch using PyTorch. The project includes the architecture setup, loading weights, and inference with sample test images.
 
 ## Project Structure
 
-├── yolov3.ipynb # Jupyter notebook with the architecture setup, loading weights, and inference with sample test images.
-├── data/ # contains classes for COCO dataset
-├── images/ # test images
-├── dst/ # object detection applied test images(output of YOLO v3)
-├── cfg/ #Contains configuration file for YOLO v3
-├── yolov3.weights #pre-trained weights of YOLO v3
-├── pallete #for coloring the bounding box borders
-└── README.md # Project documentation
+├── yolov3.ipynb # Jupyter notebook with the architecture setup, loading weights, and inference with sample test images. <br>
+├── data/ # contains classes for COCO dataset <br>
+├── images/ # test images <br>
+├── dst/ # object detection applied test images(output of YOLO v3) <br>
+├── cfg/ #Contains configuration file for YOLO v3 <br>
+├── yolov3.weights #pre-trained weights of YOLO v3 <br>
+├── pallete #for coloring the bounding box borders <br>
+└── README.md # Project documentation <br>
 
 ## Features
 
@@ -50,11 +48,11 @@ YOLOv3 improves upon previous YOLO versions by predicting bounding boxes at thre
 
 #### **Detection Head**
 
-| Scale          | Feature Map | Detection Output |
-| -------------- | ----------- | ---------------- |
-| Small objects  | 13×13       | 255 channels     |
-| Medium objects | 26×26       | 255 channels     |
-| Large objects  | 52×52       | 255 channels     |
+| Scale          | Feature Map |
+| -------------- | ----------- |
+| Large objects  | 13×13       |
+| Medium objects | 26×26       |
+| samall objects  | 52×52      |
 
 Each output layer predicts:  
 `3 × (5 + num_classes)` per grid cell  
@@ -62,7 +60,7 @@ Each output layer predicts:
 
 ## Results
 
-| Input (LR)                                  | SRGAN Output                                  |
+| Input                                       | YOLO V3 Output                                |
 | ------------------------------------------- | --------------------------------------------- |
 | ![original image](images/dog-cycle-car.png) | ![object detected](dst/det_dog-cycle-car.png) |
 | ![original image](images/000001.jpg)        | ![object detected](dst/det_000001.jpg)        |
